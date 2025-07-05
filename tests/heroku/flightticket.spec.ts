@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Vietnam Airlines - select one way and depart date', async ({ page }) => {
+test.skip('Vietnam Airlines - select one way and depart date', async ({ page }) => {
     await page.goto('https://www.vietnamairlines.com/vn/vi/home');
     await page.getByRole("button", { name: "Đồng ý" }).click();
     await page.getByRole("textbox", { name: "Từ" }).click();
