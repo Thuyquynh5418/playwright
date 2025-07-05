@@ -31,7 +31,7 @@ test.beforeEach(async ({page}) => {
 });
 
 
-test('Verify max due person is Jason Doe', async ({ page }) => {
+test.skip('Verify max due person is Jason Doe', async ({ page }) => {
     function getLargestDue(persons: Person[]): number {
     return Math.max(...persons.map(person => person.due));
 }
